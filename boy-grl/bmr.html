@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BMR for girls</title>
+    <link rel="stylesheet" href="bmr.css">
+</head>
+<body>
+<div class="box">
+    <h1 class="bmr">BMR for girls</h1>
+
+    <div class="btn1"> <h4>Body mass(kg)</h4>
+        <input placeholder="1000" class="inp1" type="number" ></div>
+    <div class="btn2"><h4>Height(cm)</h4>
+        <input placeholder="100" class="inp2" type="number" ></div>
+        <div class="btn2"><h4>Age</h4>
+            <input placeholder="100" class="inp3" type="number" ></div>
+        <input class='ck' type="button" value="Check" onclick="bMr()">
+      <a href="../index.html">  <input class='ck' type="button" value="Check height" >
+       
+</div>
+   
+        <script>
+            function bMr(){
+    var inp1 =parseInt(document.querySelector(".inp1").value);
+    //console.log(inp1);
+    var inp2 =parseInt(document.querySelector(".inp2").value);
+    var inp3 =parseInt(document.querySelector(".inp3").value)
+alert( 'Your BMR is ' + (655 + (9.6 * inp1) + (1.8 * inp2) - (4.7 * inp3)) + ' calory');
+
+}
+
+        </script>
+</body>
+
+</html>

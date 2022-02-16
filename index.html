@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BMR</title>
+    <link rel="stylesheet" href="boy-grl/bmr.css">
+</head>
+<body>
+<div class="box">
+    <h1 class="bmr">BMR</h1>
+
+    <div class="btn1">
+      <a href="boy-grl/bmr.html">  <input class="boy" type="button" value="BMR Girls" > 
+        
+        </div>
+        <div class="btn2">
+           <a href="boy-grl/bmrb.html">  <input class="girl" type="button" value="BMR Boys" >
+        </div>
+        <div class="cm">
+            <input class="bo" type="number"> 
+            <input class='cm' type="button" value='check' onclick='conv()'>
+        </div>
+
+       <script>
+           
+           function conv(){
+               var cm= document.querySelector(".bo").value;
+               alert(((cm*12)*2.54) + " cm");
+           }
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body{
+    background-image: linear-gradient(to top right, red,yellow);
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+
+display: flex;
+justify-content: center;
+
+
+
+}
+.bmr   , .res{
+    text-align: center;
+
+}
+.inp1, .inp2, .inp3, .inpb1, .inpb2, .inpb3 {
+    padding:13px 20px;
+    background-color: transparent;
+    border-bottom: 1.5 px solid black;
+}
+.boy , .girl, .cm, .bo{
+    padding:13px 20px;
+}
